@@ -1,0 +1,95 @@
+{
+ "4070": [
+  [
+   "long-url",
+   "HTTP/1.1 500 Server Error\r\nContent-Lengt"
+  ],
+  [
+   "long-header",
+   "HTTP/1.1 500 Server Error\r\nContent-Lengt"
+  ],
+  [
+   "many-headers",
+   "HTTP/1.1 500 Server Error\r\nContent-Lengt"
+  ],
+  [
+   "chunked-bad",
+   "<timeout>"
+  ],
+  [
+   "cl-bad",
+   "<timeout>"
+  ],
+  [
+   "nul-in-path",
+   "HTTP/1.1 404 Not Found\r\nContent-Length: "
+  ],
+  [
+   "huge-cl",
+   "<timeout>"
+  ],
+  [
+   "smuggling",
+   "HTTP/1.1 404 Not Found\r\nContent-Length: "
+  ],
+  [
+   "deep-query",
+   "HTTP/1.1 500 Server Error\r\nContent-Lengt"
+  ],
+  [
+   "bad-method",
+   "HTTP/1.1 500 Server Error\r\nContent-Lengt"
+  ],
+  [
+   "ALIVE before/after",
+   "b'HTTP/1.1 200 \\r\\n' / b'HTTP/1.1 200 \\r\\n'"
+  ]
+ ],
+ "55442": [
+  [
+   "long-url",
+   "HTTP/1.1 500 Server Error\r\nContent-Lengt"
+  ],
+  [
+   "long-header",
+   "HTTP/1.1 500 Server Error\r\nContent-Lengt"
+  ],
+  [
+   "many-headers",
+   "HTTP/1.1 500 Server Error\r\nContent-Lengt"
+  ],
+  [
+   "chunked-bad",
+   "HTTP/1.1 404 Not Found\r\nContent-Length: "
+  ],
+  [
+   "cl-bad",
+   "HTTP/1.1 404 Not Found\r\nContent-Length: "
+  ],
+  [
+   "nul-in-path",
+   "HTTP/1.1 404 Not Found\r\nContent-Length: "
+  ],
+  [
+   "huge-cl",
+   "HTTP/1.1 404 Not Found\r\nContent-Length: "
+  ],
+  [
+   "smuggling",
+   "HTTP/1.1 404 Not Found\r\nContent-Length: "
+  ],
+  [
+   "deep-query",
+   "HTTP/1.1 500 Server Error\r\nContent-Lengt"
+  ],
+  [
+   "bad-method",
+   "HTTP/1.1 500 Server Error\r\nContent-Lengt"
+  ],
+  [
+   "ALIVE before/after",
+   "b'HTTP/1.1 404 No' / b'HTTP/1.1 404 No'"
+  ]
+ ],
+ "note": "Live-Fuzz 4070+55442 (10 Malformed-Klassen): nur 500/404/timeout, beide Parser vor/nachher alive (getInfo 200) \u2013 kein Crash, konsistent mit cgarrot civetweb-Fuzzing"
+}

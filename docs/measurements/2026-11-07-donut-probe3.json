@@ -1,0 +1,26 @@
+{
+ "host": "192.168.1.111",
+ "open_ports": [
+  1080,
+  4070,
+  5541,
+  8888,
+  55442,
+  55443,
+  55445
+ ],
+ "ssdp_mdns": {
+  "ssdp": [],
+  "mdns": []
+ },
+ "spotify_getinfo": "HTTP/1.1 200 \r\nContent-Type: application/json\r\nContent-Length: 670\r\n\r\n{\"status\": 101, \"statusString\": \"OK\", \"spotifyError\": 0, \"version\": \"2.9.0\", \"deviceID\": \"d6a19719-16bc-4b9d-ba68-891ea1e36720\", \"remoteName\": \"\", \"publicKey\": \"CEbn4tmVt40rrE03Qp9T45IbY2WO+sy3KL1UtSUPIJ8cgAgeG0sPOaS5X6k2RXpTCstgfOR/E9NzDnsxiU3dl4YwTzYGqpSQ7P7hz6ud1UlKPjm3WN0aj8ipmDkKbyz7\", \"deviceType\": \"SPEAKER\", \"libraryVersion\": \"3.209.367-g12ca7f99\", \"brandDisplayName\": \"Amazon\", \"groupStatus\": \"NONE\", \"modelDisplayName\": \"Echo_Dot\", \"resolverVersion\": \"0\", \"tokenType\": \"accesstoken\", \"scope\": \"streaming\", \"availability",
+ "socks_1080": {
+  "greeting": "0500",
+  "connect_reply": "05090001000000000000",
+  "connect_code": 9
+ },
+ "whad_55442": "HTTP/1.1 404 Not Found\r\nContent-Length: 30\r\nDate: Sat, 07 Nov 2026 06:31:51 GMT\r\nConnection: close\r\n\r\nError 404: Not Found\nNot Found",
+ "whad_mtls_55443": "ssl error (expected): [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1082)",
+ "whad_mtls_55445": "os error: [Errno 104] Connection reset by peer",
+ "note": "3. Voll-Probe; zusätzlich: 55443 zeigt self-signed WHALEXA-Zert (O=WHALEXA, OU=0x2567d9ea, CN=0.0.0.0) dann alert 40 ohne client-cert; 55445/8888 RST"
+}

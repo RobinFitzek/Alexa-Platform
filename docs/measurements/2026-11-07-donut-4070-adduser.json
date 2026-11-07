@@ -1,0 +1,8 @@
+{
+ "host": "192.168.1.111",
+ "time": "2026-11-07 03:30:30",
+ "probes": {
+  "addUser_minimal": "HTTP/1.1 404 Not Found\r\nContent-Length: 30\r\nDate: Sat, 07 Nov 2026 02:30:28 GMT\r\nConnection: close\r\n\r\n",
+  "addUser_fullset": "HTTP/1.1 404 Not Found\r\nContent-Length: 30\r\nDate: Sat, 07 Nov 2026 02:30:29 GMT\r\nConnection: close\r\n\r\n"
+ }
+}

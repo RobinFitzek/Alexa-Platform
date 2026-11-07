@@ -1,0 +1,1 @@
+{"host": "192.168.1.111", "time": "2026-11-07 05:30:28", "8888_tls": "fail: [Errno 104] Connection reset by peer", "direct_443": "OK TLSv1.3"}

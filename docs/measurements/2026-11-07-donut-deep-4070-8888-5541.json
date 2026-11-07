@@ -1,0 +1,67 @@
+{
+ "host": "192.168.1.111",
+ "time": "2026-11-07 02:31:07",
+ "probes": {
+  "4070": {
+   "getInfo-h1.0": {
+    "reply": "HTTP/1.1 200 \r\nContent-Type: application/json\r\nContent-Length: 670\r\n\r\n{\"status\": 101, \"statusString\": \"OK\", \"spotifyError\": 0, \"version\": \"2.9.0\", \"deviceID\": \"d6a19719-16bc-4b9d-ba68-891ea1e36720\", \"remoteName\": \"\", \"publicKey\": \"CEbn4tmVt40rrE03Qp9T45IbY2WO+sy3KL1UtSUPIJ8cgAgeG0sPOaS5X6k2RXpTCstgf",
+    "hex": "485454502f312e3120323030200d0a436f6e74656e742d547970653a20617070"
+   },
+   "getInfo-host": {
+    "reply": "HTTP/1.1 200 \r\nContent-Type: application/json\r\nContent-Length: 670\r\n\r\n{\"status\": 101, \"statusString\": \"OK\", \"spotifyError\": 0, \"version\": \"2.9.0\", \"deviceID\": \"d6a19719-16bc-4b9d-ba68-891ea1e36720\", \"remoteName\": \"\", \"publicKey\": \"CEbn4tmVt40rrE03Qp9T45IbY2WO+sy3KL1UtSUPIJ8cgAgeG0sPOaS5X6k2RXpTCstgf",
+    "hex": "485454502f312e3120323030200d0a436f6e74656e742d547970653a20617070"
+   },
+   "root": {
+    "reply": "HTTP/1.1 404 Not Found\r\nContent-Length: 30\r\nDate: Sat, 07 Nov 2026 01:31:06 GMT\r\nConnection: close\r\n\r\n",
+    "hex": "485454502f312e3120343034204e6f7420466f756e640d0a436f6e74656e742d"
+   },
+   "login-post": {
+    "reply": "HTTP/1.1 404 Not Found\r\nContent-Length: 30\r\nDate: Sat, 07 Nov 2026 01:31:07 GMT\r\nConnection: close\r\n\r\nError 404: Not Found\nNot Found",
+    "hex": "485454502f312e3120343034204e6f7420466f756e640d0a436f6e74656e742d"
+   },
+   "coral": {
+    "reply": "HTTP/1.1 404 Not Found\r\nContent-Length: 30\r\nDate: Sat, 07 Nov 2026 01:31:07 GMT\r\nConnection: close\r\n\r\nError 404: Not Found\nNot Found",
+    "hex": "485454502f312e3120343034204e6f7420466f756e640d0a436f6e74656e742d"
+   }
+  },
+  "8888": {
+   "banner": {
+    "reply": "",
+    "hex": ""
+   },
+   "garbage": {
+    "error": "[Errno 104] Connection reset by peer"
+   }
+  },
+  "5541": {
+   "garbage": {
+    "error": "[Errno 104] Connection reset by peer"
+   },
+   "tls": "no TLS: [Errno 104] Connection reset by peer"
+  },
+  "55442_extra": {
+   "/whalexa/v1": {
+    "reply": "HTTP/1.1 404 Not Found\r\nContent-Length: 30\r\nDate: Sat, 07 Nov 2026 01:31:07 GMT\r\nConnection: close\r\n\r\nError 404: Not Found\nNot Found",
+    "hex": "485454502f312e3120343034204e6f7420466f756e640d0a436f6e74656e742d"
+   },
+   "/api/v2": {
+    "reply": "HTTP/1.1 404 Not Found\r\nContent-Length: 30\r\nDate: Sat, 07 Nov 2026 01:31:07 GMT\r\nConnection: close\r\n\r\nError 404: Not Found\nNot Found",
+    "hex": "485454502f312e3120343034204e6f7420466f756e640d0a436f6e74656e742d"
+   },
+   "/status": {
+    "reply": "HTTP/1.1 404 Not Found\r\nContent-Length: 30\r\nDate: Sat, 07 Nov 2026 01:31:07 GMT\r\nConnection: close\r\n\r\nError 404: Not Found\nNot Found",
+    "hex": "485454502f312e3120343034204e6f7420466f756e640d0a436f6e74656e742d"
+   },
+   "/spotifyConnect": {
+    "reply": "HTTP/1.1 404 Not Found\r\nContent-Length: 30\r\nDate: Sat, 07 Nov 2026 01:31:07 GMT\r\nConnection: close\r\n\r\n",
+    "hex": "485454502f312e3120343034204e6f7420466f756e640d0a436f6e74656e742d"
+   }
+  }
+ },
+ "notes": {
+  "getInfo_live": "HTTP/1.0 -> 200, deviceID d6a19719-16bc-4b9d-ba68-891ea1e36720, publicKey, version 2.9.0 (Spotify Connect leak bestätigt live; HTTP/1.1 hängt)",
+  "8888": "silent relay (RST auf garbage)",
+  "5541": "RST auf garbage, kein TLS (Matter PASE plain)",
+  "55442": "alle extra Routen 404"
+ }
+}
